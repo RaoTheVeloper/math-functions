@@ -9,10 +9,11 @@ func GCD(a, b int) int {
 		b = -b
 	}
 
-	if b == 0 {
-		return a
+	if a < b {
+		a, b = b, a
 	}
-	return gcd(b, a%b)
+
+	return gcd(a, b)
 }
 
 func gcd(a, b int) int {
