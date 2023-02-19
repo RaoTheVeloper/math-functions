@@ -15,7 +15,7 @@ var tests = []testCase{
 	{a: 10, b: 0, result: 10},
 	{a: 10, b: 1, result: 1},
 	{a: 10, b: 2, result: 2},
-	{a: 5, b: 10, result: 5},
+	{a: 12, b: 18, result: 6},
 	{a: -5, b: 5, result: 5},
 	{a: -5, b: -5, result: 5},
 	{a: 5, b: -5, result: 5},
