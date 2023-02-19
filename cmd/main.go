@@ -9,5 +9,5 @@ import (
 func main() {
 	fmt.Println("Welcome to math functions!")
 
-	fmt.Printf("GCD(%d, %d) = %d", 10, 5, pkg.GCD(10, 5))
+	fmt.Printf("GCD(%d, %d) = %d", 12, 18, pkg.GCD(12, 18))
 }
