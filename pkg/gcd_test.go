@@ -6,11 +6,11 @@ import (
 	"github.com/RaoTheVeloper/math-functions/pkg"
 )
 
-type testCase struct {
+type gcdTestCase struct {
 	a, b, result int
 }
 
-var tests = []testCase{
+var gcdTests = []gcdTestCase{
 	{a: 10, b: 5, result: 5},
 	{a: 10, b: 0, result: 10},
 	{a: 10, b: 1, result: 1},
@@ -22,7 +22,7 @@ var tests = []testCase{
 }
 
 func TestGCD(t *testing.T) {
-	for _, test := range tests {
+	for _, test := range gcdTests {
 		if result := pkg.GCD(test.a, test.b); result != test.result {
 			t.Errorf("GCD(%d, %d) = %d; want %d", test.a, test.b, result, test.result)
 		}
