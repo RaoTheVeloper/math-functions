@@ -29,3 +29,11 @@ func TestLCM(t *testing.T) {
 		}
 	}
 }
+
+func TestLCMPrimeFactorization(t *testing.T) {
+	for _, test := range lcmTests {
+		if result := pkg.LCMPrimeFactorization(test.a, test.b); result != test.result {
+			t.Errorf("LCMPrimeFactorization(%d, %d) = %d; want %d", test.a, test.b, result, test.result)
+		}
+	}
+}
